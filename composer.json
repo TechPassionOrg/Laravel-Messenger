@@ -1,0 +1,53 @@
+{
+    "name": "techpassion/laravel-messenger",
+    "description": "Add messager feature to Laravel application ",
+    "keywords": [
+        "techpassion",
+        "laravel",
+        "messenger",
+        "message",
+        "messaging"
+    ],
+    "homepage": "https://github.com/TechPassionOrg/Laravel-Messenger",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tony Tran",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2|^8.0",
+        "illuminate/config": "^5.5|^6.0|^7.0|^8.0",
+        "illuminate/support": "^5.5|^6.0|^7.0|^8.0",
+        "illuminate/database": "^5.5|^6.0|^7.0|^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0|^9.3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "TechPassion\\Messenger\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TechPassion\\Messenger\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TechPassion\\Messenger\\MessengerServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
